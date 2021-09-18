@@ -27,14 +27,14 @@ __Note:__ A separate redis server is needed for operation.
     ```
     If you are running an `ARM` machine like a Paspberry-Pi, the official version of phpMyAdmin doesn't work as it is available only for `AMD64`. 
     
-    To use it on `ARM`, edit the line `39` in `docker-compose.yml` to what it looks like below.
+    To use it on `ARM`, edit the line `39` in [docker-compose.yml](./docker-compose.yml) to what it looks like below.
 
     ```DOCKER-COMPOSE
     image: arm64v8/phpmyadmin
     ```
 
 ## BUILD YOUR OWN
-Modify the Dockerfile as needed and run the following.
+Modify the [Dockerfile](./Dockerfile) as needed and run the following.
 ```BASH
 docker build -t wordpress-redis .
 ```
